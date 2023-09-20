@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.2 on win32)" generated="20220818 16:36:40.824" rpa="false" schemaversion="3">
+<suite id="s1" name="RobotVSC" source="D:\RobotVSC">
+<suite id="s1-s1" name="Scripts" source="D:\RobotVSC\Scripts">
+<suite id="s1-s1-s1" name="Scripts" source="D:\RobotVSC\Scripts\Scripts.robot">
+<test id="s1-s1-s1-t1" name="ConnexionETdeconnexion" line="47">
+<kw name="Login" library="keywords">
+<arg>${vURL}</arg>
+<arg>${vBrowser}</arg>
+<arg>${vUsername}</arg>
+<arg>${vPassword}</arg>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20220818 16:36:41.261" endtime="20220818 16:36:41.262"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${vURL}</arg>
+<arg>${vBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220818 16:36:41.263" level="INFO">Opening browser 'chrome' to base url 'http://10.242.4.50/share/page/'.</msg>
+<status status="PASS" starttime="20220818 16:36:41.263" endtime="20220818 16:36:44.969"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220818 16:36:44.970" endtime="20220818 16:36:45.099"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txt_UserName}</arg>
+<arg>${vUsername}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220818 16:36:45.100" level="INFO">Typing text 'admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20220818 16:36:45.099" endtime="20220818 16:36:45.168"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txt_Password}</arg>
+<arg>${vPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220818 16:36:45.169" level="INFO">Typing text '12345678' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20220818 16:36:45.169" endtime="20220818 16:36:45.262"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>${btn_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220818 16:36:45.264" level="INFO">Clicking button 'xpath=//button[contains(text(), 'Connexion')]'.</msg>
+<status status="PASS" starttime="20220818 16:36:45.263" endtime="20220818 16:36:47.536"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${lblTitle}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220818 16:36:47.536" endtime="20220818 16:36:47.557"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${lblTitle}</arg>
+<arg>Tableau de bord de</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220818 16:36:47.573" level="INFO">Element 'xpath=//h1[@id='HEADER_TITLE']/span' contains text 'Tableau de bord de'.</msg>
+<status status="PASS" starttime="20220818 16:36:47.558" endtime="20220818 16:36:47.574"/>
+</kw>
+<status status="PASS" starttime="20220818 16:36:41.260" endtime="20220818 16:36:47.574"/>
+</kw>
+<kw name="Logout" library="keywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${link_HeaderUserMenu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220818 16:36:47.575" endtime="20220818 16:36:47.597"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${link_HeaderUserMenu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220818 16:36:47.598" level="INFO">Clicking element 'id=HEADER_USER_MENU_POPUP'.</msg>
+<status status="PASS" starttime="20220818 16:36:47.597" endtime="20220818 16:36:47.638"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${link_HeaderDeconnexion}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220818 16:36:47.638" endtime="20220818 16:36:47.656"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${link_HeaderDeconnexion}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220818 16:36:47.657" level="INFO">Clicking element 'id=HEADER_USER_MENU_LOGOUT'.</msg>
+<status status="PASS" starttime="20220818 16:36:47.657" endtime="20220818 16:36:47.692"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220818 16:36:47.692" endtime="20220818 16:36:49.814"/>
+</kw>
+<status status="PASS" starttime="20220818 16:36:47.575" endtime="20220818 16:36:49.815"/>
+</kw>
+<status status="PASS" starttime="20220818 16:36:41.257" endtime="20220818 16:36:49.816"/>
+</test>
+<doc>Fichiers de scripts pour le module RQ3 : Sites.</doc>
+<status status="PASS" starttime="20220818 16:36:40.860" endtime="20220818 16:36:49.818"/>
+</suite>
+<status status="PASS" starttime="20220818 16:36:40.854" endtime="20220818 16:36:49.819"/>
+</suite>
+<status status="PASS" starttime="20220818 16:36:40.830" endtime="20220818 16:36:49.822"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RobotVSC">RobotVSC</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Scripts">RobotVSC.Scripts</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Scripts">RobotVSC.Scripts.Scripts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

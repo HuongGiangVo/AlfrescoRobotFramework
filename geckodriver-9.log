@@ -1,0 +1,17 @@
+1693869306432	geckodriver	INFO	Listening on 127.0.0.1:58538
+1693869309487	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58539" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hgian\\AppData\\Local\\Temp\\rust_mozprofileLFTRzm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693869309810	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693869309889	Marionette	INFO	Listening on port 58572
+WebDriver BiDi listening on ws://127.0.0.1:58539
+Read port: 58572
+1693869310189	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58539/devtools/browser/ef8b34a1-9332-473a-a7f3-380d0de81e22
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+1693869362077	Marionette	INFO	Stopped listening on port 58572
+Dynamically enable window occlusion 1

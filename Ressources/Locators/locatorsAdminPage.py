@@ -1,0 +1,10 @@
+# Admin Page Elements
+link_Application = "xpath://a[contains(text(),'Application')]"
+link_GestionnaireCategorie = "xpath://a[contains(text(),'Gestionnaire de catégories')]"
+link_GestionnaireRecherche = "xpath://a[contains(text(),'Gestionnaire de recherche')]"
+link_GestionnaireTags = "xpath://a[contains(text(),'Gestionnaire de tags')]"
+link_GestionnaireModele = "xpath://a[contains(text(),'Gestionnaire de modèles')]"
+link_GestionnaireSites = "xpath://a[contains(text(),'Gestionnaire de sites')]"
+link_TacheReplication = "xpath://a[contains(text(),'Tâches de réplication')]"
+link_Groupes = "xpath://a[contains(text(),'Groupes')]"
+link_Utilisateurs = "xpath://a[contains(text(),'Utilisateurs')]"

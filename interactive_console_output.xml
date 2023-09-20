@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230905 10:16:24.362" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\hgian\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Login">
+<arg>${vURL}</arg>
+<arg>${vBrowser}</arg>
+<arg>${vUsername}</arg>
+<arg>${vPassword}</arg>
+<msg timestamp="20230905 10:16:24.796" level="FAIL">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</msg>
+<status status="FAIL" starttime="20230905 10:16:24.796" endtime="20230905 10:16:24.796"/>
+</kw>
+<kw name="Init Date">
+<var>${vCompleteDate}</var>
+<status status="NOT RUN" starttime="20230905 10:16:24.796" endtime="20230905 10:16:24.796"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${vCompleteDate}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230905 10:16:24.796" endtime="20230905 10:16:24.796"/>
+</kw>
+<kw name="Logout">
+<status status="NOT RUN" starttime="20230905 10:16:24.804" endtime="20230905 10:16:24.804"/>
+</kw>
+<status status="PASS" starttime="20230905 10:16:24.388" endtime="20230905 10:20:54.863"/>
+</kw>
+<status status="PASS" starttime="20230905 10:16:24.386" endtime="20230905 10:20:54.865"/>
+</test>
+<status status="PASS" starttime="20230905 10:16:24.362" endtime="20230905 10:20:54.865"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
